@@ -22,7 +22,7 @@
         *, *::before, *::after { box-sizing: border-box; }
         
         body {
-            margin: 0;
+            margin: 1;
             font-family: 'Tiro Devanagari Hindi', serif;
             color: var(--text-dark);
             background-color: var(--background-cream);
@@ -39,7 +39,7 @@
         .content-wrapper {
             display: flex; justify-content: center; align-items: center;
             min-height: 94vh; 
-            padding: 0px 7px; 
+            padding: 2px 7px; 
         }
 
         .main-container {
@@ -65,7 +65,7 @@
         .rakhi-image-wrapper { margin-bottom: 10px; }
         .rakhi-gif { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: block; }
         
-        .greeting-header {
+        .greeting-header { 
             font-family: 'Yatra One', cursive; 
             font-size: 1.6rem; 
             color: var(--text-dark); line-height: 1.6; 
@@ -299,7 +299,7 @@
         const pageUrl = generateLink();
         if (!pageUrl) return;
         const senderName = senderNameInput.value.trim();
-        const shareText = `🐍 *${senderName}* की ओर से आपको और आपके परिवार को नागपंचमी की हार्दिक शुभकामनाएं। 🙏\n\nनाग देवता का आशीर्वाद पाने के लिए यह दिव्य संदेश देखें:\n👇👇👇\n${pageUrl}`;
+        const shareText = `🐍 *${senderName}* की तरफ से आपको और आपके परिवार को नागपंचमी की हार्दिक शुभकामनाएं। 🙏\n\nपूरा संदेश देखने के लिए नीचे दिए लिंक पर क्लिक करें:\n👇👇👇\n${pageUrl}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
     }
     
